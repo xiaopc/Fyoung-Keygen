@@ -23,7 +23,7 @@ gcc -o fyoung fyoung.o MD5.o
 
 ## Usage
 
-In router's `ppp.sh` (mine locates at `/lib/netifd/proto/`) , after username & password read, such as:
+In router's `ppp.sh` (mine locates at `/lib/netifd/proto/`) , after where username & password was read, such as:
 
 ```bash
 json_get_vars ipv6 demand keepalive keepalive_adaptive username password pppd_options pppname unnumbered
