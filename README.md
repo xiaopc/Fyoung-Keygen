@@ -1,11 +1,19 @@
 # Fyoung-Keygen
 A keygen of China Telecom Fyoung SCU Jiangan Dialer
 
+## Sketch
+
+Decompile from v2.23 macOS dialer(single dialing).
+
+The keygen can generate the true username of PPPOE dial.
+
+
+
+&copy; 2017 xiaopc, all rights reserved & profitable use forbidden. 
+
 ## Compile
 
-The keygen is designed for routers, you may want to use MIPS toolchain,
-
-e.g. mipsel-openwrt-linux-uclibc-gcc.
+The keygen is designed for routers, you may want to use MIPS toolchain, e.g. mipsel-openwrt-linux-uclibc-gcc.
 
 ```bash
 gcc -c MD5.c -std=c99

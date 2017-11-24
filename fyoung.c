@@ -38,7 +38,6 @@ void CalcRealID(const char* username, const char* password, unsigned int timesta
     MD5Init(&md51);                 
     MD5Update(&md51,md5Result0,16);
     MD5Final(&md51,md5Result1);
-
     for (int j=0; j<8; j++) sprintf(finMD5+2*j, "%02X", md5Result1[j]);
 
     sprintf(out, "~ghca%X%s%s%s%s", timestamp, "2023", finMD5, passwordCheck, username);
@@ -48,9 +47,8 @@ int main(int argc, char** argv){
     if (argc<3) return 0;
     if (strstr(argv[1], "tyfy") == NULL){
         printf("%s", argv[1]);
-    } else{
+    } else {
         unsigned int timestamp = time((time_t*)NULL);
-        //unsigned int timestamp = 0x5A13D5E8;
         char userID[48 + 1];
         memset(userID,0,sizeof(userID));
         CalcRealID(argv[1]+4,argv[2],timestamp,userID);
