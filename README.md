@@ -1,5 +1,6 @@
 # Fyoung-Keygen
-A keygen of China Telecom Fyoung Dialer
+A keygen of China Telecom Fyoung Dialer.
+
 I only tested this program in SCU. Maybe it's same to other colleges in Chengdu. 
 
 ## Sketch
