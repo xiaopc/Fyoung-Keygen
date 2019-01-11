@@ -1,7 +1,6 @@
 # Fyoung-Keygen
-A keygen of China Telecom Fyoung Dialer.
 
-I only tested this program in SCU. Maybe it's same to other colleges in Chengdu. 
+A keygen of China Telecom Fyoung Dialer.
 
 ## Sketch
 
@@ -27,7 +26,7 @@ gcc -o fyoung fyoung.o MD5.o
 
 ## Usage
 
-In router's `ppp.sh` (mine locates at `/lib/netifd/proto/`) , after where username & password's variables are generated , e.g.:
+In router's `ppp.sh` (maybe locating at `/lib/netifd/proto/`) , after where username & password's variables are generated , e.g.:
 
 ```bash
 json_get_vars ipv6 demand keepalive keepalive_adaptive username password pppd_options pppname unnumbered
@@ -38,5 +37,7 @@ Add:
 ```
 username=`/usr/sbin/fyoung $username $password`
 ```
+
+*Notice: ` \` ` is grave accent mark, while ` \' ` is single quotation mark. [Learn more](https://en.wikipedia.org/wiki/Grave_accent#Use_in_programming).*
 
 When dialing, add `tyfy` before your username(if not, it will return original username).
