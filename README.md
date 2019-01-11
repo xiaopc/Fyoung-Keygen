@@ -4,11 +4,9 @@ A keygen of China Telecom Fyoung Dialer.
 
 ## Sketch
 
-Decompile from v2.23 macOS dialer(single dialing).
+Decompile from v2.23 macOS dialer.
 
 The keygen can generate the true username of PPPoE dial.
-
-**Notice: This keygen doesn't handle the heartbeat packets, so the connection may be aborted every 24 hours more or less.**
 
 &copy; 2018 xiaopc, all rights reserved & profitable use forbidden. 
 
@@ -16,7 +14,7 @@ The keygen can generate the true username of PPPoE dial.
 
 ## Compile
 
-The keygen is designed for routers, you may want to use specific toolchain, e.g. mipsel-openwrt-linux-uclibc-gcc.
+The keygen is designed for routers, you would like to use specific toolchain, e.g. mipsel-openwrt-linux-uclibc-gcc.
 
 ```bash
 gcc -c MD5.c -std=c99
@@ -26,7 +24,7 @@ gcc -o fyoung fyoung.o MD5.o
 
 ## Usage
 
-In router's `ppp.sh` (maybe locating at `/lib/netifd/proto/`) , after where username & password's variables are generated , e.g.:
+In router's `ppp.sh` (maybe locating at `/lib/netifd/proto/`) , after where username & password variables are generated , e.g.:
 
 ```bash
 json_get_vars ipv6 demand keepalive keepalive_adaptive username password pppd_options pppname unnumbered
@@ -34,10 +32,10 @@ json_get_vars ipv6 demand keepalive keepalive_adaptive username password pppd_op
 
 Add:
 
-```
+```bash
 username=`/usr/sbin/fyoung $username $password`
 ```
 
 *Notice: <kbd>\`</kbd> is grave accent mark, while <kbd>\'</kbd> is single quotation mark. [Learn more](https://en.wikipedia.org/wiki/Grave_accent#Use_in_programming).*
 
-When dialing, add `tyfy` before your username(if not, it will return original username).
+When dialing, add `tyfy` before your username(if not, it will return the original username).
