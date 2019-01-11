@@ -38,6 +38,6 @@ Add:
 username=`/usr/sbin/fyoung $username $password`
 ```
 
-*Notice: <key>\`</key> is grave accent mark, while <key>\'</key> is single quotation mark. [Learn more](https://en.wikipedia.org/wiki/Grave_accent#Use_in_programming).*
+*Notice: <kbd>\`</kbd> is grave accent mark, while <kbd>\'</kbd> is single quotation mark. [Learn more](https://en.wikipedia.org/wiki/Grave_accent#Use_in_programming).*
 
 When dialing, add `tyfy` before your username(if not, it will return original username).
