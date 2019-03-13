@@ -44,7 +44,7 @@ When dialing, add `tyfy` before your username(if not, it will return the origina
 
 ### Other routers based on Linux (including ASUS/Padavan)
 
-Your router firmware may not run `pppd` by shell, so it can not easily configure by changing a script.
+Your router firmware may not run `pppd` by shell, so it can't be configured easily by changing a script.
 
 However, `pppd` can load a `*.so` plugin. The problem would be solved if we provide a plugin-based version.
 
@@ -52,7 +52,7 @@ Unfortunately, we have not started this work(for now).
 
 (btw, it's difficult to set up the environment for compiling plugins)
 
-You are welcome to open a [pr](pulls)!
+You are welcome to open a [pr](../../pulls)!
 
 ## Others
 
