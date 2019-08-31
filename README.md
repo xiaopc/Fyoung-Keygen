@@ -26,6 +26,8 @@ gcc -o fyoung fyoung.o MD5.o
 
 ### OpenWRT/LEDE
 
+*Here's a [detailed introduction in Chinese by Mr. Xiao](https://mrxiao.net/openwrt-cross-compile.html), thanks.*
+
 In router's `ppp.sh` (maybe locating at `/lib/netifd/proto/`) , after where username & password variables are generated , e.g.:
 
 ```bash
