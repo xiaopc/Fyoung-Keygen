@@ -2,6 +2,8 @@
 
 A keygen of China Telecom Fyoung Dialer.
 
+*More about internet connection in SCU, [read this](https://scunet.syaoran.top).*
+
 ## Sketch
 
 Decompile from v2.23 macOS dialer.
