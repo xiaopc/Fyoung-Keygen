@@ -52,9 +52,7 @@ Your router firmware may not run `pppd` by shell, so it can't be configured easi
 
 However, `pppd` can load a `*.so` plugin. The problem would be solved if we provide a plugin-based version.
 
-Unfortunately, we have not started this work(for now).
-
-(btw, it's difficult to set up the environment for compiling plugins)
+See [this repository](https://github.com/syaoranwe/SCUNET/tree/master/code/%E5%A4%A9%E7%BF%BC%E9%A3%9Eyoung) for more details.
 
 You are welcome to open a [pr](../../pulls)!
 
