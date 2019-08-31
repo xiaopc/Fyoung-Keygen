@@ -14,7 +14,11 @@ The keygen can generate the true username of PPPoE dial.
 
 **Legal notice: you should realize that ALL THE CONSEQUENCES, INCLUDING LEGAL LIABILITY, WERE ON YOUR OWN IF YOU USE THIS PROGRAM!**
 
-## Compile
+## For OpenWRT/LEDE
+
+*Here's a [detailed introduction in Chinese by Mr. Xiao](https://mrxiao.net/openwrt-cross-compile.html), thanks.*
+
+### Compile
 
 The keygen is designed for routers, you would like to use specific toolchain, e.g. mipsel-openwrt-linux-uclibc-gcc.
 
@@ -24,11 +28,7 @@ gcc -c fyoung.c -std=c99
 gcc -o fyoung fyoung.o MD5.o
 ```
 
-## Usage
-
-### OpenWRT/LEDE
-
-*Here's a [detailed introduction in Chinese by Mr. Xiao](https://mrxiao.net/openwrt-cross-compile.html), thanks.*
+### Install
 
 In router's `ppp.sh` (maybe locating at `/lib/netifd/proto/`) , after where username & password variables are generated , e.g.:
 
@@ -46,7 +46,7 @@ username=`/usr/sbin/fyoung $username $password`
 
 When dialing, add `tyfy` before your username(if not, it will return the original username).
 
-### Other routers based on Linux (including ASUS/Padavan)
+## For Other routers based on Linux (including ASUS/Padavan)
 
 Your router firmware may not run `pppd` by shell, so it can't be configured easily by changing a script.
 
